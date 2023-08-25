@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+main {
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+}
+
+.left-content {
+    width: 50%;
+    background: var(--body-bg-color);
+    padding: 50px 30px;
+    height: 100vh;
+}
+
+.left-content .logo img {
+    width: 389px;
+    height: 94px;
+}
+
+.main-content {
+    margin-top: 92px;
+}
+
+.main-content h3 {
+    color: var(--title-color);
+    font: 24px 700;
+}
+
+.main-content p.secondary-title {
+    font: 700 14px 'League Spartan', sans-serif;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.main-content p.description {
+    font: 400 14px 'League Spartan', sans-serif;
+    color: #fff;
+}
+
+form {
+    max-width: 750px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form label {
+    color: var(--form-color);
+    font: 700 14px 'League Spartan', sans-serif;
+}
+
+form input {
+    width: 135%;
+    height: 48px;
+    border: none;
+    border-left: 5px solid #04D361;
+    padding: 17px 15px;
+    margin-top: 18px;
+}
+
+form input:focus-visible {
+    animation: onFocus .5s both;
+    outline: none;
+}
+
+form input::placeholder {
+    font: 400 12px;
+    color: #6A6A6A;
+}
+
+form button {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: -41%;
+    top: 31px;
+    border: none;
+    background: var(--bg-button-color);
+    color: #fff;
+}
+
+form button:hover {
+    animation: onHover .5s both;
+    cursor: pointer;
+}
+
+form button img {
+    color: #fff;
+}
+
+.see-first {
+    color: var(--bg-button-color);
+    text-decoration: none;
+    font: 700 14px 'League Spartan', sans-serif;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.see-first img {
+    margin-left: 5px;
+}
+
+.right-content {
+    width: 50%;
+    background: url(assets/read_news.jpg);
+    background-size: cover;
+    background-position-x: 100%;
+}
+
+@keyframes onFocus { 
+    0% { border-color: #04D361}
+    100% { border-color: #8157e4}
+}
+
+@keyframes onHover { 
+    0% { background: var(--bg-button-color)}
+    100% { background: #04D361 }
+}

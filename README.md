@@ -24,7 +24,6 @@ This project was developed using the following technologies:
 
 - HTML
 - CSS
-- JS
 
 ## Project
 
@@ -32,7 +31,7 @@ Rocketseat project to create a page to capt leads or newsletter
 
 ## See Project
 
-<!--  -->
+Download the repository in your computer and open index.html file
 
 ---
 

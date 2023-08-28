@@ -12,16 +12,20 @@
     --bg-button-color: #8257e5;
 }
 
+body {
+    background: var(--body-bg-color);
+}
+
 main {
     font-family: 'Work Sans', sans-serif;
     display: flex;
+    height: 100vh;
 }
 
 .left-content {
     width: 50%;
-    background: var(--body-bg-color);
     padding: 50px 30px;
-    height: 100vh;
+    height: 100%;
 }
 
 .left-content .logo img {
@@ -129,4 +133,22 @@ form button img {
 @keyframes onHover { 
     0% { background: var(--bg-button-color)}
     100% { background: #04D361 }
+}
+
+@media(max-width: 768px) {
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    form input {
+        max-width: 100%;
+    }
+
+    form button {
+        right: 0;
+    }
 }
